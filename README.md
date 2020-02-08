@@ -8,7 +8,8 @@ Ktools(暂时叫这个)是为了我自己这个懒人所编写，工具还在编
 
 使用方法:
 
-git clone https://github.com/Bcap03/Ktools.git
+git clone https://github.com/Bcap03/Ktools.gitcd Ktools/
+
 cd Ktools/
 
 python ktools.py
