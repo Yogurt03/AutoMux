@@ -55,7 +55,8 @@ def main():
     elif XXX == "5":
         install_nmap()
         print("安装完成，2秒后重启程序")
-    elif XXX == "0": #退出程序
+        restart()
+    elif XXX == "0" or "exit": #退出程序
         sys.exit()
     else:
         print("输入错误请重新输入!")
