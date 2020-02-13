@@ -10,6 +10,8 @@ def main():
     print("    [2]  安装Lazymux")
     print("    [3]  安装Metasploit")
     print("    [4]  修复msf数据库")
+    print("    [5]  安装Nmap")
+    print("    [6]  更新Muxtools")
     print("\n    [0]  退出Muxtoosl")
     XXX = input("请输入要运行的指令 >>> ")
     if XXX == "1": #更换Termux源
@@ -37,19 +39,22 @@ def main():
             restart()
     elif XXX == "2": #安装Lazymux
         install_lazymux()
-        print("安装成功，2秒后重启程序")
+        print("安装完成，2秒后重启程序")
         time.sleep(2)
         restart()
     elif XXX == "3": #安装MSF
         install_msf()
-        print("安装成功，2秒后重启程序")
+        print("安装完成，2秒后重启程序")
         time.sleep(2)
         restart()
     elif XXX == "4":
         repair()
-        print("修复成功，2秒后重启程序")
+        print("修复完成，2秒后重启程序")
         time.sleep(2)
         restart()
+    elif XXX == "5":
+        install_nmap()
+        print("安装完成，2秒后重启程序")
     elif XXX == "0": #退出程序
         sys.exit()
     else:

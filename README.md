@@ -1,16 +1,38 @@
-Muxtools(暂时叫这个)是为了我自己这个懒人快速给Termux配置而写，工具还在编写中。
+```
+ ______                              _      
+|  ___ \             _              | |     
+| | _ | |_   _ _   _| |_  ___   ___ | | ___ 
+| || || | | | ( \ / )  _)/ _ \ / _ \| |/___)
+| || || | |_| |) X (| |_| |_| | |_| | |___ |
+|_||_||_|\____(_/ \_)\___)___/ \___/|_(___/ 
 
-功能:
-一键运行更换Termux源(清华大学)
-一键安装metasploit
-一键修复MSF连接不到数据库
-其他功能还没想到。
+```
 
-使用方法:
+本工具是为了懒人配置Termux所写<br>
 
-git clone https://github.com/Bcap03/Muxtools.git
-cd Muxtools/
-chmod +x muxtools.py
-python muxtools.py
+> 功能<br>
+> > 一键更换Termux源
+> > 一键安装Lazymux
+> > 一键安装Metasploit
+> > 一键安装Nmap
+> > 暂时只有这些功能
 
-我没学过bash不会做那种运行一次sh就可以在任何地方输入muxtools就可以运行工具，so就只能这样啦
+----------------------
+
+> 懒人安装方法:<br>
+> > curl https://raw.githubusercontent.com/Bcap03/Muxtools/master/script/install.sh | bash<br>
+
+----------------------
+
+> 手动安装方法:<br>
+> > git clone https://github.com/Bcap03/Muxtools.git<br>
+> > cd Muxtools<br>
+> > python muxtools.py<br>
+> > Tips:如果想要在任何地方输入muxtools就能启动，请输入 cd .. 后继续下面的步骤
+> > cp $HOME/Muxtools $PREFIX/share/<br>
+> > cp $HOME/Muxtools/script/muxtools $PREFIX/bin/<br>
+> > rm -rf $HOME/Muxtools<br>
+> > muxtools<br>
+
+-----------------------
+

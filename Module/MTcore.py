@@ -31,13 +31,14 @@ def restart():
 	curdir = os.getcwd()
 
 def install_lazymux():
-    os.system("git clone https://github.com/Bcap03/Muxtools.git $HOME/")
+    print("安装Lazymux中，请稍后...")
+    os.system("git clone https://github.com/Gameye98/Lazymux.git $HOME/")
 
 def qhd():
     print("更换清华源中，请稍后...")
-    os.system("sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux stable main@' $PREFIX/etc/apt/sources.list")
+    os.system("rm -rf $PREFIX/etc/apt/sources.list")
+    os.system('echo "deb https://mirrors.tuna.tsinghua.edu.cn/termux stable main" >$PREFIX/etc/apt/sources.list")
     os.system("apt-get update")
-
 def gfy():
     print("更换官方源中，请稍后...")
     os.system("rm -rf $PREFIX/etc/apt/sources.list")
@@ -48,6 +49,10 @@ def install_msf():
     print("安装msf中，请稍候...")
     os.system("pkg install unstable-repo -y")
     os.system("pkg install metasploit -y")
+
+def install_nmap():
+    print("安装Nmap中，请稍候...")
+    os.system("pkg install nmap -y")
 
 def repair():
     print("修复msf数据库中，请稍候...")
