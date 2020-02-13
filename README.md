@@ -20,7 +20,7 @@
 ----------------------
 
 > 懒人安装方法:<br>
-> > curl https://raw.githubusercontent.com/Bcap03/Muxtools/master/script/install.sh | bash<br>
+> > curl https://raw.githubusercontent.com/Bcap03/Muxtools/master/install.sh | bash<br>
 
 ----------------------
 
