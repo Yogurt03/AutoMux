@@ -29,10 +29,8 @@
 > > cd Muxtools<br>
 > > python muxtools.py<br>
 > > Tips:如果想要在任何地方输入muxtools就能启动，请输入 cd .. 后继续下面的步骤
-> > cp $HOME/Muxtools $PREFIX/share/<br>
-> > cp $HOME/Muxtools/script/muxtools $PREFIX/bin/<br>
-> > rm -rf $HOME/Muxtools<br>
+> > chmod +x install.sh<br>
+> > ./install.sh<br>
 > > muxtools<br>
 
 -----------------------
-
