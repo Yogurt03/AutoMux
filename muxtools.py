@@ -22,12 +22,12 @@ def main():
         if XX == "1": #更换官方源
             gfy()
             print("更换成功，2秒后重启程序")
-            time.sleep(2)
+            timeout(2)
             restart()
         elif XX == "2": #更换清华大学源
             qhd()
             print("更换成功，2秒后重启程序")
-            time.sleep(2)
+            timeout(2)
             restart()
         elif XX == "0": #返回主程序
             os.system("clear")
@@ -40,21 +40,22 @@ def main():
     elif XXX == "2": #安装Lazymux
         install_lazymux()
         print("安装完成，2秒后重启程序")
-        time.sleep(2)
+        timeout(2)
         restart()
     elif XXX == "3": #安装MSF
         install_msf()
         print("安装完成，2秒后重启程序")
-        time.sleep(2)
+        timeout(2)
         restart()
     elif XXX == "4":
         repair()
         print("修复完成，2秒后重启程序")
-        time.sleep(2)
+        timeout(2)
         restart()
     elif XXX == "5":
         install_nmap()
         print("安装完成，2秒后重启程序")
+        timeout(2)
         restart()
     elif XXX == "0" or "exit": #退出程序
         sys.exit()
