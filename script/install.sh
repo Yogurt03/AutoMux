@@ -1,4 +1,5 @@
 apt-get update
+apt-get clean
 pkg install git python wget -y
 git clone https://github.com/Bcap03/Muxtools.git $PREFIX/share/Muxtools
 wget -P /bin https://raw.githubusercontent.com/Bcap03/Muxtools/master/script/muxtools
