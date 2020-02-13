@@ -31,7 +31,7 @@ def restart():
 	curdir = os.getcwd()
 
 def install_lazymux():
-    os.system("git clone git clone https://github.com/Bcap03/Muxtools.git $HOME/")
+    os.system("git clone https://github.com/Bcap03/Muxtools.git $HOME/")
 
 def qhd():
     print("更换清华源中，请稍后...")
@@ -46,7 +46,8 @@ def gfy():
 
 def install_msf():
     print("安装msf中，请稍候...")
-    os.system("pkg install unstable-repo -y && pkg install metasploit -y")
+    os.system("pkg install unstable-repo -y")
+    os.system("pkg install metasploit -y")
 
 def repair():
     print("修复msf数据库中，请稍候...")
