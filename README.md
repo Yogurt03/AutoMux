@@ -11,11 +11,11 @@
 本工具是为了懒人配置Termux所写<br>
 
 > 功能<br>
-> > 一键更换Termux源
-> > 一键安装Lazymux
-> > 一键安装Metasploit
-> > 一键安装Nmap
-> > 暂时只有这些功能
+> > 一键更换Termux源<br><br>
+> > 一键安装Lazymux<br>
+> > 一键安装Metasploit<br>
+> > 一键安装Nmap<br>
+> > 暂时只有这些功能<br>
 
 ----------------------
 
