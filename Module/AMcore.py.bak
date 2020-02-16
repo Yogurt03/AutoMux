@@ -75,7 +75,7 @@ def install_sudo():
     os.system("git clone https://gitlab.com/st42/termux-sudo.git")
     os.system("cd termux-sudo")
     os.system("cat sudo > /data/data/com.termux/files/usr/bin/sudo")
-    os.system("chmod 700 /data/data/com.termux/files/usr/bin/sudo")
+    os.system("chmod 700 chmod 700 /data/data/com.termux/files/usr/bin/sudo")
     okay()
 
 def upgrade_AutoMux():
