@@ -1,10 +1,10 @@
 ```
- ______                              _      
-|  ___ \             _              | |     
-| | _ | |_   _ _   _| |_  ___   ___ | | ___ 
-| || || | | | ( \ / )  _)/ _ \ / _ \| |/___)
-| || || | |_| |) X (| |_| |_| | |_| | |___ |
-|_||_||_|\____(_/ \_)\___)___/ \___/|_(___/ 
+               _        __  __            
+    /\        | |      |  \/  |           
+   /  \  _   _| |_ ___ | \  / |_   ___  __
+  / /\ \| | | | __/ _ \| |\/| | | | \ \/ /
+ / ____ \ |_| | || (_) | |  | | |_| |>  < 
+/_/    \_\__,_|\__\___/|_|  |_|\__,_/_/\_\
 
 ```
 
@@ -20,17 +20,17 @@
 ----------------------
 
 > 懒人安装方法:<br>
-> > curl https://raw.githubusercontent.com/Bcap03/Muxtools/master/install.sh | bash<br>
+> > curl https://raw.githubusercontent.com/Bcap03/AutoMux/master/install.sh | bash<br>
 
 ----------------------
 
 > 手动安装方法:<br>
-> > git clone https://github.com/Bcap03/Muxtools.git<br>
-> > cd Muxtools<br>
-> > python muxtools.py<br>
-> > Tips:如果想要在任何地方输入muxtools就能启动，请输入 cd .. 后继续下面的步骤
+> > git clone https://github.com/Bcap03/AutoMux.git<br>
+> > cd AutoMux<br>
+> > python automux.py<br>
+> > Tips:如果想要在任何地方输入automux就能启动本程序，请输入 cd .. 后继续下面的步骤
 > > chmod +x install.sh<br>
 > > ./install.sh<br>
-> > muxtools<br>
+> > automux<br>
 
 -----------------------
