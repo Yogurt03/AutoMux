@@ -27,4 +27,8 @@ chmod +x install.sh
 ```
 ```
 automux
-’‘’
+```
+
+### 联系我
+QQ：3099869357
+Bilibili：@就是鹏鹏呀
