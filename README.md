@@ -6,12 +6,11 @@
 
 ### 依赖
 • Python 3.x
-• • termcoler
 
 #### 安装和使用方法
 ##### 懒人安装方法:
 ```
-curl https://raw.githubusercontent.com/Bcap03/AutoMux/master/install.sh | bash<br>
+curl https://raw.githubusercontent.com/Bcap03/AutoMux/master/install.sh | bash
 ```
 ##### 手动安装方法:
 ```
