@@ -78,6 +78,7 @@ def install_sudo():
     okay()
 
 def upgrade_AutoMux():
-    print("功能还在开发中...")
+    print("更新中...")
+    os.system("git pull")
     timeout(2)
     restart()
