@@ -1,6 +1,4 @@
 apt-get update
-clear
-echo "安装依赖中..."
 pkg install git python -y
 pip install termcolor
 git clone https://github.com/Bcap03/AutoMux.git $PREFIX/share/AutoMux

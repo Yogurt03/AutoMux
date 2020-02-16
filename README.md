@@ -6,7 +6,7 @@
 
 ### 依赖
 • Python 3.x
-• termcoler
+• • termcoler
 
 #### 安装和使用方法
 ##### 懒人安装方法:
