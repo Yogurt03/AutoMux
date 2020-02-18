@@ -3,6 +3,7 @@
 
 import os, sys
 from time import sleep as timeout
+from termcolor import colored 
 
 AM_banner =  """
                _        __  __            
@@ -25,7 +26,7 @@ def restart():
 	curdir = os.getcwd()
 
 def okay():
-    print("安装成功！2秒后重启AutoMux")
+    print(colored("\n安装成功！2秒后重启AutoMux\n","blue"))
     timeout(2)
     restart()
 
@@ -38,7 +39,7 @@ def qhd():
     print("更换清华源中，请稍后...")
     os.system("rm -rf $PREFIX/etc/apt/sources.list")
     os.system('echo "deb https://mirrors.tuna.tsinghua.edu.cn/termux stable main" >$PREFIX/etc/apt/sources.list')
-    os.system("apt-get update")
+    os.system("apt update")
     print("更换成功！2秒后重启AutoMux")
     timeout(2)
     restart()
@@ -47,20 +48,20 @@ def gfy():
     print("更换官方源中，请稍后...")
     os.system("rm -rf $PREFIX/etc/apt/sources.list")
     os.system('echo "deb https://termux.org/packages/ stable main" >$PREFIX/etc/apt/sources.list')
-    os.system("apt-get update")
+    os.system("apt  update")
     print("更换成功！2秒后重启AutoMux")
     timeout(2)
     restart()
 
 def install_msf():
     print("安装msf中，请稍候...")
-    os.system("pkg install unstable-repo -y")
-    os.system("pkg install metasploit -y")
+    os.system("apt install unstable-repo -y")
+    os.system("apt install metasploit -y")
     okay()
 
 def install_nmap():
     print("安装Nmap中，请稍候...")
-    os.system("pkg install nmap -y")
+    os.system("apt install nmap -y")
     okay()
 
 def repair_msf():
@@ -70,16 +71,16 @@ def repair_msf():
     timeout(2)
     restart()
 
-def install_sudo():
-    print("安装sudo命令中，请稍候")
-    os.system("git clone https://gitlab.com/st42/termux-sudo.git")
-    os.system("cd termux-sudo")
-    os.system("cat sudo > /data/data/com.termux/files/usr/bin/sudo")
-    os.system("chmod 700 /data/data/com.termux/files/usr/bin/sudo")
+def install_zsh():
+    print("安装zsh中，请稍候...")
+    os.system('sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh )"')
     okay()
 
 def upgrade_AutoMux():
     print("更新中...")
+    os.system("cd $PREFIX/share/AutoMux")
     os.system("git pull")
+    os.system("cd $HOME")
+    print("更新成功，2秒后重启AutoMux")
     timeout(2)
     restart()
