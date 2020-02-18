@@ -41,7 +41,7 @@ def main():
 
         if install.strip() == "1" or install.strip() == "01":install_nmap()
         elif install.strip() == "2" or install.strip() == "02":install_lazymux()
-        elif install.strip() == "3" or isntall.strip() == "04":install_zsh()
+        elif install.strip() == "3" or install.strip() == "03":install_zsh()
         elif install.strip() == "4" or install.strip() == "04":install_msf()
         elif install.strip() == "0" or install.strip() == "00":restart()
         else:
