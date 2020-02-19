@@ -11,13 +11,13 @@ def main():
     print("    [01]  更换Termux源")
     print("    [02]  列出安装列表")
     print("    [03]  修复Msf数据库")
-    print("    [04]  MSF木马专区(开发中)\n")      
+    print("    [04]  MSF木马专区\n")      
     print("    [99]  更新AutoMux")
     print("    [00]  退出AutoMux\n")
     automux = input(colored("AutoMux >>> ","yellow"))
 
     if automux.strip() == "1" or automux.strip() == "01":
-        print("请选择要更换的源:")
+        print(colored("\n请选择要更换的源:\n","blue"))
         print("    [01]  官方源")
         print("    [02]  清华大学源\n")
         print("    [00]  返回主菜单\n")
@@ -49,7 +49,7 @@ def main():
             timeout(2)
             restart()           
     elif automux.strip() == "3" or automux.strip() == "03":repair_msf()
-    #elif automux.strip() == "4" or automux.strip() == "04":
+    elif automux.strip() == "4" or automux.strip() == "04":msf_mm()
     elif automux.strip() == "99":upgrade_AutoMux()
     elif automux.strip() == "0" or automux.strip() == "00" or automux.strip() == "exit":sys.exit()
     else:
