@@ -35,6 +35,11 @@ def install_lazymux():
     os.system("git clone https://github.com/Gameye98/Lazymux.git")
     okay()
 
+def install_Hydra():
+    print(colored("安装Hydra中，请稍后...","green"))
+    os.system("apt install hydra -y")
+    okay()
+
 def qhd():
     print(colored("更换清华源中，请稍后...","green"))
     os.system("rm -rf $PREFIX/etc/apt/sources.list")

@@ -33,16 +33,18 @@ def main():
     
     elif automux.strip() == "2" or automux.strip() == "02":
         print("\n    [01]  Nmap")
-        print("    [02]  Lazymux")
-        print("    [03]  ohmyzsh")
-        print("    [04]  Metasploit\n")
+        print("    [02]  Hydra")
+        print("    [03]  Lazymux")
+        print("    [04]  ohmyzsh")
+        print("    [05]  Metasploit\n")
         print("    [00]  返回主菜单\n") 
         install = input(colored("AutoMux >>> ","yellow"))
 
         if install.strip() == "1" or install.strip() == "01":install_nmap()
-        elif install.strip() == "2" or install.strip() == "02":install_lazymux()
-        elif install.strip() == "3" or install.strip() == "03":install_zsh()
-        elif install.strip() == "4" or install.strip() == "04":install_msf()
+        elif install.strip() == "2" or install.strip() == "02":install_Hydra()
+        elif install.strip() == "3" or install.strip() == "03":install_lazymux()
+        elif install.strip() == "4" or install.strip() == "04":install_zsh()
+        elif install.strip() == "5" or install.strip() == "05":install_msf()
         elif install.strip() == "0" or install.strip() == "00":restart()
         else:
             print(colored("\n输入错误，请重新输入！","red"))
