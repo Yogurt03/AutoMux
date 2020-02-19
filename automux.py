@@ -12,7 +12,6 @@ def main():
     print("    [02]  列出安装列表")
     print("    [03]  生成Msf木马")    
     print("    [04]  修复Msf数据库\n")  
-    print("    [99]  更新AutoMux")
     print("    [00]  退出AutoMux\n")
     automux = input(colored("AutoMux >>> ","yellow"))
 
@@ -52,7 +51,7 @@ def main():
             restart()           
     elif automux.strip() == "3" or automux.strip() == "03":msf_mm()
     elif automux.strip() == "4" or automux.strip() == "04":repair_msf()
-    elif automux.strip() == "99":upgrade_AutoMux()
+    elif automux.split() == "update":autoupdate()
     elif automux.strip() == "0" or automux.strip() == "00" or automux.strip() == "exit":sys.exit()
     else:
         print(colored("\n输入错误，请重新输入！\n","red"))

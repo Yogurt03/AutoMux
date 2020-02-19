@@ -81,15 +81,6 @@ def install_zsh():
     os.system('sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh )"')
     okay()
 
-def upgrade_AutoMux():
-    print(colored("更新中...","green"))
-    os.system("cd $PREFIX/share/AutoMux")
-    os.system("git pull")
-    os.system("cd $HOME")
-    print(colored("更新成功，2秒后重启AutoMux","green"))
-    timeout(2)
-    restart()
-
 def WindouwsMM():
     LHOST = input(colored("请输入本机IP地址 >>> ","green"))
     LPORT = input(colored("请输入要监听的端口 >>> ","green"))
@@ -125,6 +116,15 @@ def msf_mm():
         print(colored("\n输入错误，请重新输入！\n","red"))
         timeout(2)
         restart()
+
+def autoupdate():
+    print(colored("更新AutoMux中，请稍候...","green"))
+    os.system("cd $PREFIX/share/AutoMux")
+    os.system("git stash && git pull")
+    print(callable("\n更新成功，请重启AutoMux\n","red"))
+    timeout(2)
+    sys.exit()
+
         
 
 
