@@ -13,12 +13,12 @@ AM_banner =  """
  / ____ \ |_| | || (_) | |  | | |_| |>  < 
 /_/    \_\__,_|\__\___/|_|  |_|\__,_/_/\_\\
 
-Tips.后面带有(Root)的需要手机有Root权限!!!
-
 """                                       
 
 def banner():
-    print(AM_banner)
+    print(colored(AM_banner,"blue"))
+    print(colored("Tips.后面带有","blue") + colored("「Root」","red") + colored("标识的需要手机","blue")+colored("有Root权限!!!","red"))
+    print(colored("Tips.    输入update可查看如何更新程序\n","blue"))
 
 def restart():
 	python = sys.executable
