@@ -117,13 +117,6 @@ def msf_mm():
         timeout(2)
         restart()
 
-def autoupdate():
-    print(colored("更新AutoMux中，请稍候...","green"))
-    os.system("cd $PREFIX/share/AutoMux")
-    os.system("git stash && git pull")
-    print(callable("\n更新成功，请重启AutoMux\n","red"))
-    timeout(2)
-    sys.exit()
 
         
 

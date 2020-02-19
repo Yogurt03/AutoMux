@@ -51,7 +51,10 @@ def main():
             restart()           
     elif automux.strip() == "3" or automux.strip() == "03":msf_mm()
     elif automux.strip() == "4" or automux.strip() == "04":repair_msf()
-    elif automux.split() == "update":autoupdate()
+    elif automux.split() == "update":
+        os.system("cd $PREFIX/share/AutoMux")
+        os.system("chmod +x update.sh")
+        os.system("./update.sh")
     elif automux.strip() == "0" or automux.strip() == "00" or automux.strip() == "exit":sys.exit()
     else:
         print(colored("\n输入错误，请重新输入！\n","red"))
