@@ -22,7 +22,7 @@ backmenu_banner = """
 def banner():
     print(colored(AM_banner,"blue"))
     print(colored("Tips.后面带有","blue") + colored(" < ","red") + colored("标识的需要手机","blue")+colored("有Root权限!!!","red"))
-    print(colored("Tips.    输入update可查看如何更新程序\n","blue"))
+    print(colored("Tips.更新AutoMux请输入'update'\n","blue"))
 
 def restart():
 	python = sys.executable

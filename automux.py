@@ -69,9 +69,9 @@ def main():
     elif automux.strip() == "4" or automux.strip() == "04":repair_msf()
     elif automux.strip() == "0" or automux.strip() == "00" or automux.strip() == "exit":sys.exit()
     elif automux.strip() == "update":
-        print(colored("1. cd $PREFIX/share/AutoMux","green") + colored("    #$PREFIX必须是大写!","red"))
-        print(colored("2. git stash && git pull","green"))
-        print(colored("AutoMux将在5秒后关闭，以便您更新AutoMux","green"))
+        print(colored("更新中，请稍候...","green"))
+        os.system("update-AutoMux")
+        print(colored("更新完成AutoMux将在5秒后关闭，请重新启动AutoMux","green"))
         timeout(5)
         sys.exit()
     else:
