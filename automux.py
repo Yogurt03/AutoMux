@@ -70,7 +70,7 @@ def main():
     elif automux.strip() == "0" or automux.strip() == "00" or automux.strip() == "exit":sys.exit()
     elif automux.strip() == "update":
         print(colored("更新中，请稍候...","green"))
-        os.system("update-AutoMux")
+        os.system("bash $PREFIX/share/AutoMux/update.sh")
         print(colored("更新完成AutoMux将在5秒后关闭，请重新启动AutoMux","green"))
         timeout(5)
         sys.exit()
