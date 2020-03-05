@@ -72,8 +72,9 @@ def main():
         print(colored("更新中，请稍候...","green"))
         os.system("bash $PREFIX/share/AutoMux/update.sh")
         print(colored("更新完成AutoMux将在5秒后关闭，请重新启动AutoMux","green"))
-        timeout(5)
-        sys.exit()
+        timeout(2)
+        os.system("clear")
+        restart()
     else:
         print(colored("\n输入错误，请重新输入！\n","red"))
         timeout(2)
