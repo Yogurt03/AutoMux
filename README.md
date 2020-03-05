@@ -13,21 +13,12 @@
 curl https://raw.githubusercontent.com/Bcap03/AutoMux/master/install.sh | bash
 ```
 ##### 手动安装方法:
-```
-git clone https://github.com/Bcap03/AutoMux.git
-```
-```
-cd AutoMux
-```
-```
-chmod +x install.sh
-```
-```
-./install.sh
-```
-```
-automux
-```
+1. git clone https://github.com/Bcap03/AutoMux.git
+2. cd AutoMux
+3. chmod +x install.sh
+4. ./install.sh
+5. automux
+
 
 ### 联系我
 QQ      : 3099869357
