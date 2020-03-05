@@ -21,7 +21,7 @@ backmenu_banner = """
 """
 def banner():
     print(colored(AM_banner,"blue"))
-    print(colored("Tips.后面带有","blue") + colored("「Root」","red") + colored("标识的需要手机","blue")+colored("有Root权限!!!","red"))
+    print(colored("Tips.后面带有","blue") + colored(" < ","red") + colored("标识的需要手机","blue")+colored("有Root权限!!!","red"))
     print(colored("Tips.    输入update可查看如何更新程序\n","blue"))
 
 def restart():
@@ -137,6 +137,13 @@ def install_SlowHTTPTest():
     print(colored("克隆SlowHTTPTest中，请稍候...","green"))
     os.system("git clone https://github.com/shekyan/slowhttptest.git $HOME/slowhttptest")
     okay() 
+
+def install_bettercap():
+    print(colored("安装Bettercap中，请稍候...","green"))
+    os.system("apt install root-repo")
+    os.system("apt install bettercap -y")
+    print(colored("安装完成，输入'bettercap'启动","green"))
+    backmenu()
     
 
 def WindouwsMM():
