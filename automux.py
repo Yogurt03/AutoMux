@@ -71,9 +71,8 @@ def main():
     elif automux.strip() == "update":
         print(colored("更新中，请稍候...","green"))
         os.system("bash $PREFIX/share/AutoMux/update.sh")
-        print(colored("更新完成AutoMux将在5秒后关闭，请重新启动AutoMux","green"))
-        timeout(2)
-        os.system("clear")
+        print(colored("\n更新完成AutoMux将在3秒后重启AutoMux\n","green"))
+        timeout(3)
         restart()
     else:
         print(colored("\n输入错误，请重新输入！\n","red"))
