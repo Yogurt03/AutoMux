@@ -10,7 +10,7 @@
 #### 安装和使用方法
 ##### 懒人安装方法:
 ```
-curl https://raw.githubusercontent.com/Bcap03/AutoMux/master/install.sh | bash
+curl https://raw.githubusercontent.com/Bcap03/AutoMux/master/script/install.sh | bash
 ```
 ##### 手动安装方法:
 1. git clone https://github.com/Bcap03/AutoMux.git
