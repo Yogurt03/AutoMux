@@ -119,9 +119,9 @@ def install_RED_HAWK():
     okay()
 
 def install_slowloris():
-    print(colored("克隆slowloris中，请稍候...","green"))
-    os.system("git clone https://github.com/gkbrk/slowloris.git $HOME/slowloris")
-    okay() 
+    print(colored("安装slowloris中，请稍候...","green"))
+    os.system("pip install slowloris")
+    backmenu()
 
 def install_dnsmap():
     print(colored("克隆dnsmap中，请稍候...","green"))
@@ -195,6 +195,32 @@ def msf_mm():
         print(colored("\n输入错误，请重新输入！\n","red"))
         timeout(2)
         restart()
+
+def install_hping3():
+    print(colored("安装hping3中，请稍候...","green"))
+    os.system("apt install root-repo")
+    os.system("apt install hping3 -y")
+    print(colored("安装完成，输入'hping3'启动","green"))
+    backmenu()
+
+def install_aircrack_ng():
+    print(colored("安装Aircrack-ng中，请稍候...","green"))
+    os.system("apt install root-repo")
+    os.system("apt install aircrack-ng -y")
+    print(colored("安装完成，输入'aircrack-ng'启动","green"))
+    backmenu()
+
+def install_WebCrack():
+    print(colored("克隆WebCrack中，请稍候...","green"))
+    os.system("git clone https://github.com/yzddmr6/WebCrack")
+    os.system("pip install bs4 lxml requests")
+    okay()
+
+def install_webdirscan():
+    print(colored("克隆webdirscan中，请稍候...","green"))
+    os.system("git clone https://github.com/Strikersb/webdirscan.git")
+    os.system("pip install requests")
+    okay()
 
 
         
