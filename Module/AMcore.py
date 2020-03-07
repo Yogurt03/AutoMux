@@ -119,8 +119,8 @@ def install_RED_HAWK():
     okay()
 
 def install_slowloris():
-    print(colored("安装slowloris中，请稍候...","green"))
-    os.system("pip install slowloris")
+    print(colored("克隆slowloris中，请稍候...","green"))
+    os.system("git clone https://github.com/gkbrk/slowloris.git")
     backmenu()
 
 def install_dnsmap():
