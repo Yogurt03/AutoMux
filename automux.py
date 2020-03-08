@@ -105,7 +105,8 @@ def update():
     print("    [00]  Bcak Menu\n")
     up = input(colored("AutoMux >>> ","yellow"))
 
-    if up.strip() == "0" or up.strip() == "00" or up.strip() == "exit":sys.exit()
+    if up.strip() == "0" or up.strip() == "00" or up.strip() == "exit":
+        restart()
     elif up.strip() == "02" or up.strip() == "2":
         print(colored("\n更新中，请稍候...\n","green"))
         pwd = os.getcwd()
