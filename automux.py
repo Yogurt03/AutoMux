@@ -105,7 +105,10 @@ def install():
 
 def update():
     print(colored("更新中，请稍候...\n","green"))
-    os.system("bash $PREFIX/share/AutoMux/update.sh")
+    pwd = os.getcwd()
+    os.system("cd %s" %pwd)
+    os.system("git stash && git pull origin master")
+    os.system("cd ~")
     print(colored("\n更新完成AutoMux将在3秒后重启AutoMux\n","green"))
     timeout(3)
     restart() 
