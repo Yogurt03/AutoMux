@@ -19,10 +19,8 @@ def main():
         elif menu.strip() == "4" or menu.strip() == "04" or menu.strip() == "trojan":msf_mm()
         elif menu.strip() == "5" or menu.strip() == "05" or menu.strip() == "update":update()
         elif menu.strip() == "0" or menu.strip() == "00" or menu.strip() == "exit":sys.exit()
-        else:
-            print(colored("\n输入错误，请重新输入！\n","red"))
-            timeout(2)
-            restart()
+        else:error()
+
     elif automux.strip() == "1" or automux.strip() == "01" or automux.strip() == "change":change()
     elif automux.strip() == "2" or automux.strip() == "02" or automux.strip() == "install":install()
     elif automux.strip() == "3" or automux.strip() == "03" or automux.strip() == "repair":repair_msf()
@@ -32,10 +30,7 @@ def main():
     elif automux.strip() == "test":
         pwd = os.getcwd()
         print(pwd)
-    else:
-        print(colored("\n输入错误，请重新输入！\n","red"))
-        timeout(2)
-        restart()      
+    else:error()  
 
 def help():
     print("\nAutoMux Commands\n========================\n")
@@ -57,10 +52,7 @@ def change():
     if source.strip() == "1" or source.strip()  == "01":gfy()
     elif source.strip() == "2" or source.strip()  == "02":qhd()
     elif source.strip()  == "0" or source.strip()  == "00":restart()
-    else:
-        print(colored("\n输入错误，请重新输入！\n","red"))
-        timeout(2)
-        restart()   
+    else:error()  
 
 def install():
     print("\n    [01]  Nmap")
@@ -129,9 +121,12 @@ def update():
         print(colored("\n更新完成AutoMux将在3秒后重启AutoMux\n","green"))
         timeout(3)
         restart()
-    else:
-        print(colored("\n输入错误，请重新输入！\n","red"))
-        timeout(2)
-        restart()        
+    else:error()
+   
+def error():   
+    print(colored("\n输入错误，请重新输入！\n","red"))
+    timeout(2)
+    restart() 
+
 if __name__ == "__main__":
 	main()

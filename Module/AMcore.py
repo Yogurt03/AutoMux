@@ -222,8 +222,3 @@ def install_webdirscan():
     os.system("git clone https://github.com/Strikersb/webdirscan.git")
     os.system("pip install requests")
     okay()
-
-
-        
-
-
