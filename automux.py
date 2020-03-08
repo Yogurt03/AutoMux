@@ -107,14 +107,33 @@ def install():
             restart()      
 
 def update():
-    print(colored("更新中，请稍候...\n","green"))
-    pwd = os.getcwd()
-    os.system("cd %s" %pwd)
-    os.system("git stash && git pull origin master")
-    os.system("cd ~")
-    print(colored("\n更新完成AutoMux将在3秒后重启AutoMux\n","green"))
-    timeout(3)
-    restart() 
+    print("\n请选择更新方式:\n")
+    print("    [01]  一键安装的更新")
+    print("    [02]  克隆安装的更新\n")
+    print("    [00]  Bcak Menu\n")
+    up = input(colored("AutoMux >>> ","yellow"))
 
+    if up.strip() == "0" or up.strip() == "00" or up.strip() == "exit":sys.exit()
+    elif up.strip() == "02" or up.strip() == "2":
+        print(colored("更新中，请稍候...\n","green"))
+        pwd = os.getcwd()
+        os.system("cd %s" %pwd)
+        os.system("git stash && git pull origin master")
+        os.system("cd ~")
+        print(colored("\n更新完成AutoMux将在3秒后重启AutoMux\n","green"))
+        timeout(3)
+        restart()
+    elif up.strip() == "01" or up.strip() == "1":   
+        print(colored("更新中，请稍候...\n","green"))
+        os.system("cd $PREFIX/share/AutoMux")
+        os.system("git stash && git pull origin master")
+        os.system("cd ~")
+        print(colored("\n更新完成AutoMux将在3秒后重启AutoMux\n","green"))
+        timeout(3)
+        restart()
+    else:
+        print(colored("\n输入错误，请重新输入！\n","red"))
+        timeout(2)
+        restart()        
 if __name__ == "__main__":
 	main()
