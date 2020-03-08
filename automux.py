@@ -29,6 +29,9 @@ def main():
     elif automux.strip() == "4" or automux.strip() == "04" or automux.strip() == "trojan":msf_mm()
     elif automux.strip() == "5" or automux.strip() == "05" or automux.strip() == "update":update()
     elif automux.strip() == "0" or automux.strip() == "00" or automux.strip() == "exit":sys.exit()
+    elif automux.strip() == "test":
+        pwd = os.getcwd()
+        print(pwd)
     else:
         print(colored("\n输入错误，请重新输入！\n","red"))
         timeout(2)
