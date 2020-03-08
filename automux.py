@@ -125,9 +125,7 @@ def update():
         restart()
     elif up.strip() == "01" or up.strip() == "1":   
         print(colored("更新中，请稍候...\n","green"))
-        os.system("cd $PREFIX/share/AutoMux")
-        os.system("git stash && git pull origin master")
-        os.system("cd ~")
+        os.system("bash $PREFIX/share/AutoMux/script/update.sh")
         print(colored("\n更新完成AutoMux将在3秒后重启AutoMux\n","green"))
         timeout(3)
         restart()
