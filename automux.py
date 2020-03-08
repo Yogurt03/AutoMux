@@ -107,7 +107,7 @@ def update():
 
     if up.strip() == "0" or up.strip() == "00" or up.strip() == "exit":sys.exit()
     elif up.strip() == "02" or up.strip() == "2":
-        print(colored("更新中，请稍候...\n","green"))
+        print(colored("\n更新中，请稍候...\n","green"))
         pwd = os.getcwd()
         os.system("cd %s" %pwd)
         os.system("git stash && git pull origin master")
@@ -116,7 +116,7 @@ def update():
         timeout(3)
         restart()
     elif up.strip() == "01" or up.strip() == "1":   
-        print(colored("更新中，请稍候...\n","green"))
+        print(colored("\n更新中，请稍候...\n","green"))
         os.system("bash $PREFIX/share/AutoMux/script/update.sh")
         print(colored("\n更新完成AutoMux将在3秒后重启AutoMux\n","green"))
         timeout(3)
