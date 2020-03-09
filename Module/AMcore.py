@@ -123,7 +123,7 @@ def install_RED_HAWK():
 def install_slowloris():
     print(colored("克隆slowloris中，请稍候...","green"))
     os.system("git clone https://github.com/gkbrk/slowloris.git")
-    backmenu()
+    okay()
 
 def install_dnsmap():
     print(colored("克隆dnsmap中，请稍候...","green"))
@@ -131,9 +131,10 @@ def install_dnsmap():
     okay() 
 
 def install_sslscan():
-    print(colored("克隆sslscan中，请稍候...","green"))
-    os.system("git clone https://github.com/rbsec/sslscan.git $HOME/sslscan")
-    okay() 
+    print(colored("安装sslscan中，请稍候...","green"))
+    os.system("pkg install sslscan -y")
+    print(colored("安装完成，输入'sslscan'启动","green"))
+    backmenu() 
 
 def install_SlowHTTPTest():
     print(colored("克隆SlowHTTPTest中，请稍候...","green"))
@@ -146,7 +147,16 @@ def install_bettercap():
     os.system("apt install bettercap -y")
     print(colored("安装完成，输入'bettercap'启动","green"))
     backmenu()
-    
+
+def install_Cupp():
+    print(colored("克隆Cupp中，请稍候...","green"))
+    os.system("git clone https://github.com/Mebus/cupp.git $HOME/cupp")
+    okay()    
+
+def install_HashBuster():
+    print(colored("克隆Hash-Buster中，请稍候...","green"))
+    os.system("git clone https://github.com/UltimateHackers/Hash-Buster.git $HOME/Hash-Buster")
+    okay()     
 
 def WindouwsMM():
     LHOST = input(colored("请输入本机IP地址 >>> ","green"))
