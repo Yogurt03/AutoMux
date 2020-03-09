@@ -13,7 +13,7 @@ AM_banner =  """
  / ____ \ |_| | || (_) | |  | | |_| |>  < 
 /_/    \_\__,_|\__\___/|_|  |_|\__,_/_/\_\\
 
-By.Bcap03 Version:V2.1 Blog:https://bcap03.top
+By.Bcap03 Version:V2.3 Blog:https://bcap03.top
 """                                       
 
 backmenu_banner = """
