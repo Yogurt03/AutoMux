@@ -4,101 +4,11 @@
 import os, sys
 from time import sleep as timeout
 from termcolor import colored 
-import random
-
-AM_banner =  """
- _____     _       _____         
-|  _  |_ _| |_ ___|     |_ _ _ _ 
-|     | | |  _| . | | | | | |_'_|
-|__|__|___|_| |___|_|_|_|___|_,_|
-
-"""   
-AM_banner1 = """
-  ___        _       ___  ___           
- / _ \      | |      |  \/  |           
-/ /_\ \_   _| |_ ___ | .  . |_   ___  __
-|  _  | | | | __/ _ \| |\/| | | | \ \/ /
-| | | | |_| | || (_) | |  | | |_| |>  < 
-\_| |_/\__,_|\__\___/\_|  |_/\__,_/_/\_\\
-
-"""
-
-AM_banner2 = """
- ________
-< AutoMux >
- --------
-       \   ,__,
-        \  (oo)____
-           (__)    )\\
-              ||--|| *
-
-"""
-
-AM_banner3 = """
-
- ▄▄▄       █    ██ ▄▄▄█████▓ ▒█████   ███▄ ▄███▓ █    ██ ▒██   ██▒
-▒████▄     ██  ▓██▒▓  ██▒ ▓▒▒██▒  ██▒▓██▒▀█▀ ██▒ ██  ▓██▒▒▒ █ █ ▒░
-▒██  ▀█▄  ▓██  ▒██░▒ ▓██░ ▒░▒██░  ██▒▓██    ▓██░▓██  ▒██░░░  █   ░
-░██▄▄▄▄██ ▓▓█  ░██░░ ▓██▓ ░ ▒██   ██░▒██    ▒██ ▓▓█  ░██░ ░ █ █ ▒ 
- ▓█   ▓██▒▒▒█████▓   ▒██▒ ░ ░ ████▓▒░▒██▒   ░██▒▒▒█████▓ ▒██▒ ▒██▒
- ▒▒   ▓▒█░░▒▓▒ ▒ ▒   ▒ ░░   ░ ▒░▒░▒░ ░ ▒░   ░  ░░▒▓▒ ▒ ▒ ▒▒ ░ ░▓ ░
-  ▒   ▒▒ ░░░▒░ ░ ░     ░      ░ ▒ ▒░ ░  ░      ░░░▒░ ░ ░ ░░   ░▒ ░
-  ░   ▒    ░░░ ░ ░   ░      ░ ░ ░ ▒  ░      ░    ░░░ ░ ░  ░    ░  
-      ░  ░   ░                  ░ ░         ░      ░      ░    ░  
-                                                                  
-"""
-
-AM_banner4 = """
-  ,---.            ,--.         ,--.   ,--.                   
- /  O  \ ,--.,--.,-'  '-. ,---. |   `.'   |,--.,--.,--.  ,--. 
-|  .-.  ||  ||  |'-.  .-'| .-. ||  |'.'|  ||  ||  | \  `'  /  
-|  | |  |'  ''  '  |  |  ' '-' '|  |   |  |'  ''  ' /  /.  \  
-`--' `--' `----'   `--'   `---' `--'   `--' `----' '--'  '--' 
-
-"""
-
-AM_banner5 = """
-
- ▄▄▄· ▄• ▄▌▄▄▄▄▄      • ▌ ▄ ·. ▄• ▄▌▐▄• ▄ 
-▐█ ▀█ █▪██▌•██  ▪     ·██ ▐███▪█▪██▌ █▌█▌▪
-▄█▀▀█ █▌▐█▌ ▐█.▪ ▄█▀▄ ▐█ ▌▐▌▐█·█▌▐█▌ ·██· 
-▐█ ▪▐▌▐█▄█▌ ▐█▌·▐█▌.▐▌██ ██▌▐█▌▐█▄█▌▪▐█·█▌
- ▀  ▀  ▀▀▀  ▀▀▀  ▀█▄▀▪▀▀  █▪▀▀▀ ▀▀▀ •▀▀ ▀▀
-"""
 
 backmenu_banner = """
     [99] Bcak Menu
     [00] Exit
 """
-banner0 ="""
-+ -- --=[ By Bcap03        Version:V2.5             ]
-+ -- --=[ Blog:https://bcap03.top                   ]
-+ -- --=[ Root permission required with \033[31m '*'\033[34m        ]
-+ -- --=[ Type 'help' for a list of commands        ]
-"""
-
-def banner():
-    x = random.randint(1,6)
-    if x == 1:
-        print(colored(AM_banner,"blue"))
-        print(colored(banner0,"blue"))
-    elif x == 2:  
-        print(colored(AM_banner1,"blue"))
-        print(colored(banner0,"blue"))
-    elif x == 3:
-        print(colored(AM_banner2,"blue"))
-        print(colored(banner0,"blue"))
-    elif x == 4:
-        print(colored(AM_banner3,"blue"))
-        print(colored(banner0,"blue"))
-    elif x == 5:
-        print(colored(AM_banner4,"blue"))
-        print(colored(banner0,"blue"))
-    elif x == 6:
-        print(colored(AM_banner5,"blue"))
-        print(colored(banner0,"blue"))
-    else:
-        print("Failed to load")
 
 def restart():
 	python = sys.executable

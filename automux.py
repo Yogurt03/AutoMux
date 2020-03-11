@@ -3,6 +3,7 @@
 
 import os, sys
 from Module.AMcore import *
+from Module.banner import banner
 from time import sleep as timeout
 from termcolor import *
 
