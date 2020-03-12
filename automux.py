@@ -187,7 +187,7 @@ def install_list():
     print("    [03] 压力测试")
     print("    [04] 密码攻击")
     print("    [05] 嗅探和欺骗")
-    print("    [04] 利用工具")
+    print("    [06] 利用工具")
     print("    [07] 其他\n")
     print("    [00] Bcak Menu\n")
     ilist = input(colored("AutoMux >>> ","yellow"))
